@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300;400;500;600;700;800&display=swap');
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+section {
+    justify-content: center;
+    display: flex;
+}
+
+body {
+    
+    background-image: url(./images/background.jpg);
+    background-size: 100%;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+
+.list {
+    background-color: black;
+    width: 280px;
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.504);
+}
+
+#today {
+    background-color: rgba(255, 255, 255, 0.700);
+    backdrop-filter: blur(5px);
+    overflow: auto;
+}
+
+#yesterday {
+    background-color: rgba(255, 255, 255, 0.500);
+    backdrop-filter: blur(5px);
+}
+
+#before-yesterday {
+    background-color: rgba(255, 255, 255, 0.300);
+    backdrop-filter: blur(5px);
+}
+
+#tomorrow {
+    background-color: rgba(255, 255, 255, 0.500);
+    backdrop-filter: blur(5px);
+}
+
+#after-tomorrow {
+    background-color: rgba(255, 255, 255, 0.300);
+    backdrop-filter: blur(5px);
+}
+
+.title {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.todo-task {
+    font-size: 18px;
+    padding: 5px;
+    background-color: rgba(255,255,255, 0.5);
+    border-radius: 6px;
+    transition: 0.05s;
+    margin-top: 3px;
+    cursor:default;
+}
+
+.todo-task:hover {
+    background-color: rgba(255,255,255, 0.75);
+    transform: scale(1.01);
+
+}
+
+.add-task {
+    opacity: 25%;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+    padding: 5px;
+    background-color: rgba(50, 50, 50, 0.5);
+    border-radius: 6px;
+    transition: 0.05s;
+    margin-top: 3px;
+
+}
+
+.add-task:hover {
+    opacity: 50%;
+    transform: scale(1.01);
+}
+
+ .done-task {
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 6px;
+    transition: 0.05s;
+    margin-top: 3px;
+    background-color: rgba(0,0,0, 0.3);
+    cursor:default;
+}
+
+.done-task:hover {
+    background-color: rgba(0,0,0, 0.4);
+    transform: scale(1.01);
+} 
+
+ .input- {
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.input-::placeholder {
+    color: black;
+    margin-left: 5px;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+ *::-webkit-scrollbar-track {
+    background: rgba(255,255,255, 0.5);
+    border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(150,150,150, 0.75);
+    border-radius: 5px;
+    border: 2px solid rgba(255,255,255, 0.0);
+    transform: scale(0.8);
+} 
+
+ .taskCount {
+    background-color: rgba(0,0,0, 0.3);
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    cursor:default;
+}
+
+.unmark {
+    background-color: rgba(0,0,0, 0.3);
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: white;
+    cursor:default;
+    transition: 0.05s;
+}
+
+.unmark:hover {
+    background-color: rgba(0,0,0, 0.4);
+    padding: 5px 15px 5px 15px;
+    font-weight: 500;
+}
+
+.invisivel {
+    visibility: hidden;
+}
+
+
+
+/*                                                                                           DARK THEME                                                                                           */
+/*                                                                                           DARK THEME                                                                                           */
+/*                                                                                           DARK THEME                                                                                           */
+/*                                                                                           DARK THEME                                                                                           */
+
+
+
+.dark-theme .taskCount {
+    background-color: rgba(255,255,255, 0.05);
+    color: rgb(209, 209, 209);
+    font-weight: 500;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    cursor:default;
+}
+
+.dark-theme .unmark {
+    background-color: rgba(255,255,255, 0.05);
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: rgb(209, 209, 209);
+    font-weight: 500;
+    cursor:default;
+    transition: 0.05s;
+}
+
+.dark-theme .unmark:hover {
+    background-color: rgba(255,255,255, 0.1);
+    padding: 5px 15px 5px 15px;
+    font-weight: 600;
+}
+
+.dark-theme .img {
+    background-color: rgba(0,0,0, 0.1);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.dark-theme .invisivel {
+    visibility: hidden;
+}
+
+.dark-theme #today {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    overflow: auto;
+}
+
+.dark-theme #yesterday {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+.dark-theme #before-yesterday {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+}
+
+.dark-theme #tomorrow {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+.dark-theme #after-tomorrow {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+}
+
+.dark-theme .title {
+    font-weight: 600;
+    font-size: 25px;
+    color: rgb(209, 209, 209);
+    font-weight: 700;
+}
+
+.dark-theme .todo-task {
+    font-size: 18px;
+    padding: 5px;
+    background-color: rgba(90,90,90, 0.4);
+    border-radius: 6px;
+    transition: 0.05s;
+    margin-top: 3px;
+    cursor:default;
+    color: rgb(209, 209, 209);
+    font-weight: 500;
+}
+
+.dark-theme .todo-task:hover {
+    background-color: rgba(90,90,90, 0.7);
+    transform: scale(1.01);
+
+}
+
+.dark-theme .done-task {
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 6px;
+    transition: 0.05s;
+    margin-top: 3px;
+    background-color: rgba(255,255,255, 0.3);
+    cursor:default;
+    color: rgb(209, 209, 209);
+    font-weight: 200;
+}
+
+.dark-theme .done-task:hover {
+    background-color: rgba(255,255,255, 0.4);
+    transform: scale(1.01);
+}
+
+.dark-theme *::-webkit-scrollbar-track {
+    background: rgba(0,0,0, 0.2);
+    border-radius: 5px;
+}
+
+.dark-theme *::-webkit-scrollbar-thumb {
+    background-color: rgba(100,100,100, 0.4);
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0, 0.0);
+    transform: scale(0.8);
+}
+
+.dark-theme .add-task {
+    opacity: 25%;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+    padding: 5px;
+    background-color: rgba(150, 150, 150, 0.5);
+    border-radius: 6px;
+    transition: 0.05s;
+    margin-top: 3px;
+
+}
+
+.dark-theme .input- {
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: white;
+}
+
+.dark-theme .input-::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.dark-theme .ph-moon {
+    transform: scale(1.5);
+}
+
+.dark-theme .ph-arrow-square-in {
+    transform: scale(1.5);
+}
+
+.dark-theme .button {
+    padding: 10px 10px 10px 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.466);
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.dark-theme .header {
+    width: 86%;
+}
+
+.ph-moon {
+    transform: scale(1.5);
+}
+
+.ph-arrow-square-in {
+    transform: scale(1.5);
+}
+
+.header {
+    height: 0%;
+    width: 86%;
+}
+
+.button {
+    padding: 10px 10px 10px 10px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.466);
+    border-radius: 5px;
+    margin-top: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.504);
+}
+
+.head-title {
+    color: white;
+    
+}
+
+.dark-theme .head-title {
+    color: black;
+}
+
+.restart {
+    padding: 6px;
+    background-color: rgba(0,0,0, 0.3);
+    border-radius: 5px;
+    margin-right: 5px;
+}

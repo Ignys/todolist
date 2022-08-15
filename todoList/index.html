@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <title>Daily List</title>
+</head>
+
+<body>
+    <div style="justify-content: center; display: flex;">
+        <div id="head" class="header" style="justify-content: space-between; display: flex;">
+            <div> <i class="ph-arrow-square-in button" onclick="createDefaultTasks('all')"></i> </div>
+            <h1 class="head-title" id="h1">DAILY LIST</h1>
+            <div> <i class="ph-moon button" onclick="darkTheme()"></i> </div>
+        </div>
+    </div>
+
+    <section class="" id="lists">
+        <div id="before-yesterday" class="list" style="height: 350px; width: 250px; margin-top: 20px;">
+            <div style="opacity: 30%;">
+                <span class="title" id="beforeYesterdayTitle">Saturday's List</span>
+                <div id="before-yesterday-list">
+
+                </div>
+                <div class="add-task"><input autocomplete="off" id="byi" type="text" name=""
+                        placeholder="~ add new task ~" class="input-"
+                        onkeypress="addNewTask(event, 'before-yesterday', 'byi');"></div>
+            </div>
+        </div>
+
+        <div id="yesterday" class="list smaller" style="height: 350px; width: 250px; margin-top: 20px;">
+            <div style="opacity: 50%;">
+                <span class="title" id="yesterdayTitle">Sunday's List</span>
+                <div id="yesterday-list">
+
+                </div>
+                <div class="add-task"><input autocomplete="off" id="yi" type="text" name=""
+                        placeholder="~ add new task ~" class="input-"
+                        onkeypress="addNewTask(event, 'yesterday', 'yi', 'y');">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="today" class="list" style="width: 20%" ;>
+            <div style="display: flex;justify-content:space-between; align-items: center; margin-bottom: 10px;">
+                <span class="title" id="todayTitle">Monday's List</span>
+                <div style="display: inline-flex;">
+                    
+                    <span onclick="unmarkAll()" class="unmark" id="unmark all">Unmark all</span>
+                    <span class="taskCount" id="taskCount">0 de 0</span>
+                </div>
+            </div>
+            <div id="today-list">
+                <!-- <div style="display: flex;justify-content:space-between; align-items: center;" id="td1"
+                    onmouseenter="showTrash('tr1')" onmouseleave="hideTrash('tr1')" onclick="checkTask('1')"
+                    class="todo-task">
+                    <div><input type="checkbox" onclick="checkTask('1')" id="tb1"><span id="tt1"
+                            style="margin-left: 3px;">Task one</span></div><i id="tr1" class="ph-trash img invisivel"
+                        onclick="removeTask('1')"></i>
+                </div> -->
+            </div>
+            <div class="add-task">
+                <input autocomplete="off" id="ti" type="text" name="" placeholder="~ add new task ~" class="input-"
+                    onkeypress="addNewTask(event, 'today', 'ti');">
+            </div>
+
+
+
+
+        </div>
+        <div id="tomorrow" class="list" style="height: 350px; width: 250px; margin-top: 20px;">
+            <div style="opacity: 50%;">
+                <span class="title" id="tomorrowTitle">Tuesday's List</span>
+                <div id="tomorrow-list">
+                </div>
+
+                <div class="add-task"><input autocomplete="off" id="toi" type="text" name=""
+                        placeholder="~ add new task ~" class="input-"
+                        onkeypress="addNewTask(event, 'tomorrow', 'toi');"></div>
+            </div>
+        </div>
+
+        <div id="after-tomorrow" class="list" style="height: 350px; width: 250px; margin-top: 20px;">
+            <div style="opacity: 30%;">
+                <span class="title" id="afterTomorrowTitle">Wednesday's List</span>
+                <div id="after-tomorrow-list">
+                </div>
+                <div class="add-task"><input autocomplete="off" id="ai" type="text" name=""
+                        placeholder="~ add new task ~" class="input-"
+                        onkeypress="addNewTask(event, 'after-tomorrow', 'ai');">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
